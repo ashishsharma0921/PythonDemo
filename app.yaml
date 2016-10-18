@@ -1,0 +1,22 @@
+
+
+
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+
+handlers:
+- url: /.*
+  script: helloworld.application
+  
+  
+builtins:
+- remote_api: on  
+  
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest 
